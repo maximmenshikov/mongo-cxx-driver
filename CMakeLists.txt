@@ -71,6 +71,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 include(GenerateExportHeader)
 include(InstallRequiredSystemLibraries)
 
+# Enable BSONCXX tests
+option(BSONCXX_ENABLE_TEST "Enable BSONCXX" ON)
+
 # Allow the user to decide whether to build the shared libaries or the static libraries.
 option(BUILD_SHARED_LIBS "Build shared libraries" ON)
 set(BUILD_VERSION "0.0.0" CACHE STRING "Library version (for both libbsoncxx and libmongocxx)")
